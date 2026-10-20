@@ -1,6 +1,6 @@
 module github.com/sealerio/sealer
 
-go 1.17
+go 1.24
 
 require (
 	github.com/BurntSushi/toml v1.2.0
@@ -18,6 +18,7 @@ require (
 	github.com/docker/go-connections v0.4.1-0.20210727194412-58542c764a11
 	github.com/docker/go-units v0.5.0
 	github.com/go-errors/errors v1.0.1
+	github.com/google/go-cmp v0.5.9
 	github.com/google/uuid v1.3.0
 	github.com/hashicorp/go-multierror v1.1.1
 	github.com/imdario/mergo v0.3.13
@@ -134,7 +135,6 @@ require (
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/google/btree v1.0.1 // indirect
 	github.com/google/gnostic v0.5.7-v3refs // indirect
-	github.com/google/go-cmp v0.5.9 // indirect
 	github.com/google/go-containerregistry v0.10.0 // indirect
 	github.com/google/go-intervals v0.0.2 // indirect
 	github.com/google/gofuzz v1.2.0 // indirect
@@ -204,7 +204,7 @@ require (
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
-	github.com/klauspost/compress v1.16.7 // indirect
+	github.com/klauspost/compress v1.18.7 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.5 // indirect
 	github.com/klauspost/pgzip v1.2.5 // indirect
 	github.com/koron/go-ssdp v0.0.2 // indirect
@@ -253,7 +253,6 @@ require (
 	github.com/libp2p/go-tcp-transport v0.5.0 // indirect
 	github.com/libp2p/go-ws-transport v0.5.0 // indirect
 	github.com/libp2p/go-yamux/v2 v2.3.0 // indirect
-	github.com/libp2p/go-yamux/v3 v3.1.2 // indirect
 	github.com/libp2p/zeroconf/v2 v2.1.1 // indirect
 	github.com/liggitt/tabwriter v0.0.0-20181228230101-89fcab3d43de // indirect
 	github.com/lithammer/dedent v1.1.0 // indirect
@@ -393,8 +392,15 @@ replace (
 	github.com/labring/lvscare => github.com/fanux/lvscare v1.1.3-beta.2.0.20220525083355-d8f3f86677d1
 	github.com/libp2p/go-libp2p => github.com/libp2p/go-libp2p v0.16.0
 	github.com/libp2p/go-libp2p-core => github.com/libp2p/go-libp2p-core v0.11.0
+	github.com/libp2p/go-libp2p-mplex => github.com/libp2p/go-libp2p-mplex v0.4.1
+	github.com/libp2p/go-libp2p-peerstore => github.com/libp2p/go-libp2p-peerstore v0.4.0
+	github.com/libp2p/go-libp2p-quic-transport => github.com/libp2p/go-libp2p-quic-transport v0.15.0
 	github.com/libp2p/go-libp2p-swarm => github.com/libp2p/go-libp2p-swarm v0.8.0
+	github.com/libp2p/go-libp2p-transport-upgrader => github.com/libp2p/go-libp2p-transport-upgrader v0.5.0
 	github.com/libp2p/go-libp2p-yamux => github.com/libp2p/go-libp2p-yamux v0.6.0
+	github.com/libp2p/go-mplex => github.com/libp2p/go-mplex v0.3.0
+	github.com/libp2p/go-tcp-transport => github.com/libp2p/go-tcp-transport v0.4.0
+	github.com/lucas-clemente/quic-go => github.com/lucas-clemente/quic-go v0.25.0
 	github.com/opencontainers/runc => github.com/opencontainers/runc v1.1.2
 	golang.org/x/net => golang.org/x/net v0.12.0
 	k8s.io/api => k8s.io/api v0.24.2
@@ -424,11 +430,4 @@ replace (
 	k8s.io/sample-apiserver => k8s.io/sample-apiserver v0.21.0
 	k8s.io/sample-cli-plugin => k8s.io/sample-cli-plugin v0.21.0
 	k8s.io/sample-controller => k8s.io/sample-controller v0.21.0
-	github.com/libp2p/go-libp2p-mplex => github.com/libp2p/go-libp2p-mplex v0.4.1
-	github.com/libp2p/go-libp2p-quic-transport => github.com/libp2p/go-libp2p-quic-transport v0.15.0
-	github.com/libp2p/go-libp2p-transport-upgrader => github.com/libp2p/go-libp2p-transport-upgrader v0.5.0
-	github.com/libp2p/go-tcp-transport => github.com/libp2p/go-tcp-transport v0.4.0
-	github.com/libp2p/go-libp2p-peerstore => github.com/libp2p/go-libp2p-peerstore v0.4.0
-	github.com/libp2p/go-mplex => github.com/libp2p/go-mplex v0.3.0
-	github.com/lucas-clemente/quic-go => github.com/lucas-clemente/quic-go v0.25.0
 )
